@@ -1,0 +1,147 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #1e1e1e;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+header img.logo {
+    height: 50px;
+}
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+nav a:hover {
+    color: #00ccff;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(45deg, #00ccff, #0066ff);
+}
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    animation: text-fade 2s infinite;
+}
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+.btn {
+    padding: 15px 30px;
+    background-color: #00ccff;
+    color: #121212;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+.btn:hover {
+    background-color: #0066ff;
+}
+
+/* Features Section */
+.features {
+    padding: 40px 20px;
+}
+.features-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.feature-card {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 300px;
+    transition: transform 0.3s;
+}
+.feature-card:hover {
+    transform: scale(1.05);
+}
+
+/* Community Section */
+.community {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #1e1e1e;
+}
+.discord-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+.discord-logo {
+    width: 100px;
+    height: auto;
+    transition: transform 0.3s;
+}
+.discord-logo:hover {
+    transform: scale(1.1);
+}
+
+/* Developers Section */
+.developers {
+    padding: 40px 20px;
+    background-color: #1e1e1e;
+}
+.developer-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.developer-card {
+    background-color: #2a2a2a;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 250px;
+    transition: transform 0.3s;
+}
+.developer-card:hover {
+    transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+    background-color: #1e1e1e;
+    text-align: center;
+    padding: 10px;
+}
+footer a {
+    color: #00ccff;
+    text-decoration: none;
+}
+
+/* Animations */
+@keyframes text-fade {
+    0%, 100% {
+        color: #ffffff;
+    }
+    50% {
+        color: #00ccff;
+    }
+}
